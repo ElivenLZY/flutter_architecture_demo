@@ -16,6 +16,7 @@ flutter 数据分层架构规范
 以用户模块为例：
 
 1，标准版
+
 ![image](https://user-images.githubusercontent.com/22269028/215697224-f0342105-3840-4689-8423-5cb7dfe58909.png)
 
 
@@ -26,6 +27,7 @@ user_local：本地数据处理
 user_repository：统一对外暴露的接口，可以聚合处理多个来源的数据，比如网络/本地（数据库/文件/sp数据），也可以对数据进行转换等操作。
 
 2，简版
+
 ![image](https://user-images.githubusercontent.com/22269028/215697284-6689b566-6ede-42d5-8839-ed58d7f40439.png)
 
 user_repository：统一对外暴露的接口，不区分数据来源，所有的数据处理全部放在这里进行处理。
